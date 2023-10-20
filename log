@@ -88,3 +88,19 @@ heap.c:41:39: error: expected ‘;’ before ‘while’
 cc1: all warnings being treated as errors
 Compilation failed
 7c2a7fa
+Fri 20 Oct 2023 02:15:49 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:40:3: error: expected ‘,’ or ‘;’ before ‘pq’
+   40 |   pq->heapArray[i].data = data;
+      |   ^~
+heap.c:41:39: error: expected ‘;’ before ‘while’
+   41 |   pq->heapArray[i].priority = priority
+      |                                       ^
+      |                                       ;
+   42 |   while (i > 0 &&
+      |   ~~~~~                                
+Compilation failed
+f7bcc7f
