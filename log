@@ -2,3 +2,22 @@ Fri 20 Oct 2023 01:42:58 AM UTC:
  tests:  0|4
 total_score: 0/70
 d7aac46
+Fri 20 Oct 2023 01:44:09 AM UTC: 
+ heap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:38:17: error: expected ‘;’ before ‘dato’
+   38 |   dato->size = 0
+      |                 ^
+      |                 ;
+   39 |   dato->heapArray = malloc(3 * sizeof(heapElem));
+      |   ~~~~           
+heap.c:40:14: error: expected ‘;’ before ‘}’ token
+   40 |   return dato
+      |              ^
+      |              ;
+   41 |   }
+      |   ~           
+Compilation failed
+e2cf8d6
