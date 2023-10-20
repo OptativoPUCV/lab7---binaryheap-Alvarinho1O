@@ -57,3 +57,9 @@ heap.c:21:30: error: lvalue required as left operand of assignment
       |                              ^
 Compilation failed
 6b8d990
+Fri 20 Oct 2023 01:48:29 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|2
+total_score: 20/70
+06083be
