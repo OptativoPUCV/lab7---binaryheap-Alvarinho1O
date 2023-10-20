@@ -182,3 +182,17 @@ heap.c:57:45: error: expected ‘;’ before ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 94aaca5
+Fri 20 Oct 2023 03:08:06 AM UTC: 
+ heap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:54:10: error: assignment to ‘Heap *’ {aka ‘struct Heap *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   54 |   if (pq = NULL || pq->size == 0)
+      |          ^
+heap.c:54:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   54 |   if (pq = NULL || pq->size == 0)
+      |       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+d5c5d47
