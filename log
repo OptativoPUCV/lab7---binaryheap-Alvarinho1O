@@ -63,3 +63,28 @@ Fri 20 Oct 2023 01:48:29 AM UTC:
  tests:  2|2
 total_score: 20/70
 06083be
+Fri 20 Oct 2023 02:15:35 AM UTC: 
+ heap.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:32:3: error: expected expression before ‘if’
+   32 |   if (pq->size == pq->capac)
+      |   ^~
+heap.c:32:3: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+heap.c:28:6: note: declared here
+   28 | void heap_push(Heap* pq, void* data, int priority){
+      |      ^~~~~~~~~
+heap.c:41:17: error: ‘i’ undeclared (first use in this function)
+   41 |   pq->heapArray[i].priority = priority
+      |                 ^
+heap.c:41:17: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:41:39: error: expected ‘;’ before ‘while’
+   41 |   pq->heapArray[i].priority = priority
+      |                                       ^
+      |                                       ;
+   42 |   while (i > 0 &&
+      |   ~~~~~                                
+cc1: all warnings being treated as errors
+Compilation failed
+7c2a7fa
