@@ -139,3 +139,13 @@ heap.c:49:13: error: expected ‘;’ before ‘}’ token
       | ~            
 Compilation failed
 65ecf07
+Fri 20 Oct 2023 02:16:31 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:40:3: error: expected ‘,’ or ‘;’ before ‘pq’
+   40 |   pq->heapArray[i].data = data;
+      |   ^~
+Compilation failed
+8274eb0

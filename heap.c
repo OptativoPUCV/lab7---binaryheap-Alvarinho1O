@@ -46,7 +46,7 @@ void heap_push(Heap* pq, void* data, int priority){
     pq->heapArray[(i - 1) / 2] = temp;
     i = (i - 1);
   }
-  pq->size++
+  pq->size++;
 }
 
 
